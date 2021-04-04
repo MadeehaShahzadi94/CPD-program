@@ -1,0 +1,19 @@
+/*Name: Madeeha Shahzadi
+ Seneca Student ID: 130638182
+ Seneca email: mshahzadi1@mysenecac.on.ca
+Date of completion: March 15, 2020
+
+I confirm that the content of this file is created by me,
+with the exception of the parts provided to me by my professor.*/
+/*************************************************************************
+*				Reflection workshop 6					**
+*************************************************************************/
+Question 1:Why do you need to deallocate the dynamically allocated memory in your vector?
+Answer: when we are thinking about vector as an array of elements that grows dynamically as you insert elements, and provides bound checking. C++ allows the memory in vector grows and shrink automatically when we are storing elements. We deallocate the memory because of memory leak, because it is pointing these memory that automatically allocate the memory for new element.
+/**************************************************************************/
+Question 2: When building an object from the input file, different things can go wrong: the record represents an unknown type of vehicle, or record contains invalid data. How can the function loadData() detect what went wrong? Can you think at another solution than the one you have implemented?
+Answer: When loadData()  as a virtual function in vehicle.h and create function in Car module to add load new data on the program.
+/****************************************************************************/
+Question3:In this workshop you had to use std::list<sdds::Vehicle*> and std::vector<sdds::Vehicle*> to store a collection of vehicles as pointers. Could you have used std::list<sdds::Vehicle> and std::vector<sdds::Vehicle> instead? Justify your answer!
+Answer:List have ability insertion and deletion in the list between in the documents.List is working opposite of the vector.
+/****************************************************************************/
