@@ -1,0 +1,19 @@
+
+What I have learned:
+
+I have studies about different concepts in this workshop. Firstly, I learn
+about anonymous struct that has no name and tag I learn about its declaration
+and usages. I also learned about copy constructor and copy assignment operator 
+and move constructor and move assignment operator and their implementation 
+. Moreover, I learn about chrono library and objects creation. I also learn
+about some built in function like now and how we can use them as stopwatch
+to start and stop the time. This part of the workshop is most interesting and most difficult to understand for me. 
+
+Question 1: the reason for the significant time difference between the copy and move operations?
+There is a difference in the way, you should take the parameter.
+Copy assignment should take its parameter by a const lvalue reference (&), because you should not change the source of your assignment
+Move assignment should take its parameter by a non-const rvalue reference (&&), because you have to modify the source of your assignment
+
+
+
+
