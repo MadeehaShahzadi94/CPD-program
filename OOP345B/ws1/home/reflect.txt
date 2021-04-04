@@ -1,0 +1,20 @@
+// Name: Madeeha Shahzadi
+// Seneca Student ID: 130638182
+// Seneca email:mshahzadi1@gmail.com
+// Date of completion:January 17,2020
+// I confirm that the content of this file is created by me,
+//   with the exception of the parts provided to me by my professor.
+
+* the difference between internal and external linkage using examples from your code?
+Answer:
+Internal linkage refers to everything only in scope of a translation unit. We are using static word with the internal linkage
+External linkage refers to things that exist beyond a particular translation unit. We are using extern word with the external linkage. For example we are using in the workshop 1: 
+extern unsigned int g_sysClock; in event.h and unsigned int g_sysClock = 86400; same global variable call in the event.cpp
+
+* what are static variables and how were they useful in this workshop.
+Static variable is internal linkage is not working in this workshop because we are giving range to the translation unit. And internal linkage is just access in internal program not different files. If we write in the static in this workshop, it is must gave error syntax and told us to undefine global variable.
+
+* the changes that you made in upgrading your Event class.
+Answer:
+i totally changed my file... after lab part i learned that external linkage in outside od the namespace as like global variable and i create dynamic memory that help me to take default memory space for description. Moreover, i learned that copy constructor and assignment operator in impotant for this assignment.
+
