@@ -1,5 +1,0 @@
-modiffied    modified
-begim        begin
-famillies    families
-Dork         Dark
-hibrid       hybrid
