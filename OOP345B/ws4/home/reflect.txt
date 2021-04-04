@@ -1,0 +1,7 @@
+What I Learn in this workshop?
+I learned many things about this workshop especially special member functions and how it is work. Secondly, I learned how the ** work and learned 3 components of functions. 1. Composition, Aggregation and Association. I am surprise when I saw the composition is die when main obj is die.
+
+the difference between the implementations of a composition and an aggregation.
+Composition is died means that if main object is dying other object that is related to the main object is also die. (Move Constructor)
+Aggregation is not like composition because if the main object is dying, other object do not died (copy Constructor)
+
