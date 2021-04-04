@@ -1,0 +1,29 @@
+
+
+
+/******************************************************************************/
+Question 1:
+List all the STL functions that you have used in this workshop; explain your reasoning for choosing each one, and not another.
+Answer:
+.size()
+accumulate()
+.begin()
+.end()
+.push_back()
+because we are using connection iterrator to containers and algorithm.
+/*****************************************************************************/
+Question2:
+Present the advantages of using STL algorithms vs. implementing the functionality by yourself using loops.
+Answer: 
+In this workshop, I used two main STL functions called for_each and sort. Std::for_each
+is an STL algorithm that takes a collection of elements (in the form of a begin and end iterator)
+and a function (or function object), and applies the function on each element of the collection.
+std::sort() sorts a vector or array (items with random access). Std::sort preserve the physical
+order of semantically equivalent values, so it is very efficient.
+/******************************************************************************/
+Question3:
+The function that sorts the collection of songs receives as a parameter the field name to use; this can create errors if the client specifies an invalid field (or misspells it). How would you redesign that function to prevent the client to specify an invalid string, allowing any error to be detected by the compiler?
+Algorithms implemented in STL are usually more powerful then the algorithms that 
+individual C++ programmers implement, when solving a problem. The STL implementations
+of algorithms go so far as to provide a for_each loop. STL algorithms helps to access
+the code from any entry point and contribute to deal with different type of structure.
