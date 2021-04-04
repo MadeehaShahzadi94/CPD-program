@@ -1,0 +1,22 @@
+// Name: Madeeha Shahzadi
+// Seneca Student ID:130638182
+// Seneca email:mshahzadi1@myseneca.on.ca
+// Date of completion:16 Feb 2020
+//
+// I confirm that the content of this file is created by me,
+//   with the exception of the parts provided to me by my professor.
+
+the difference between the implementations/utilizations of a functor and a lambda expression. When is appropriate to use each one?
+Answer: function object also called a functor. functor is basically any object where the "()" operator has been overloaded
+Moreover it allow us  you to store a state. it give us opportunity to use an object like function where you can call the object (functor) on a variable. functor works as a function in C++ and achieved by overloading () operator in the class declaration. When we implement a functor we get a functions with a state. But traditional functions do not have a state. During implementation we use the object as a function with the overloaded () operator.
+Lambda expression is a locally scoped function or anonymous function. 
+we can write a functor as a lambda expression and the advantage is that we do not need a 
+class definition for lambda expression. we can store it in a variable.
+
+the constructor for SpellChecker generates an exception in certain conditions. How would you change your code to achieve the same result, but without exceptions (both on the constructor and on the client side)? Compare the two solutions.
+We are using extra functions that help us to generate the values that expectation we need it. Otherwise it is giving errors.
+
+the classes Movie and Book contain almost identical logic in loading data from the file. How would you redesign the classes in order not to duplicate that logic?
+Movie file is taking only Movies file and Book file is taking only book file. So there is no duplication between the files.
+the classes Movie and Book are instantiated from the main() function using a custom constructor, but they also contain a default constructor. Is the default constructor necessary? Could you remove it? Justify your answer.
+If we remove default constructor it is not giving us default values.
