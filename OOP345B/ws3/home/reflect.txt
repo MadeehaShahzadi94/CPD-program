@@ -1,0 +1,40 @@
+Reflection
+Explain in your own words what you have learned in completing this workshop.
+Answer:
+I have studies about different concepts in this workshop. I learn 
+about templates and their specialization.I also learned about
+function and clases templates . Moreover i also learn how can we 
+inherit one template class from other. I also learn about object creation
+of tempalted clases.
+
+ ============================================================================
+
+
+The reason for specializing the sum() member function.
+Answer:
+We need to specialize the initial value for summation so that we can assign its
+value to 0 or empty string. We had to specialize this because summation depends
+on the type of label value pair. Hence for for int it was zero and for String it 
+was initialised to an empty string. 
+
+============================================================================
+
+
+The reason for specializing the initial value for a summation
+Answer:
+We need to define the class variable outside the class definition because these
+variables needs separate memory allocation or may be they needs to be instantiated
+
+============================================================================
+
+
+The reason for defining the class variable outside the class definition
+Answer:
+we need to specialize the sum to ensure that strings are properly concatenated
+and because this function will get both label and value string so its necessary 
+to specialize the sum so that it concatenates both string with space.
+
+
+============================================================================
+
+
