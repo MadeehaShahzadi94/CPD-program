@@ -1,0 +1,57 @@
+Script started on Sat 11 Apr 2020 07:44:45 PM EDT
+==180423== Memcheck, a memory error detector
+==180423== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==180423== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==180423== Command: ws input.txt encoded.dat.txt K
+==180423== 
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+Command Line: ws input.txt encoded.dat.txt K
+
+
+1935 bytes copied from file input.txt into memory (null byte added)
+Data encrypted in memory
+
+1936 bytes copied from binary file encoded.dat.txt into memory.
+
+1936 bytes copied from binary file encoded.dat.txt into memory.
+Data decrypted in memory
+
+==180423== Invalid read of size 1
+==180423==    at 0x4C2D034: strlen (vg_replace_strmem.c:461)
+==180423==    by 0x4F5C309: length (char_traits.h:335)
+==180423==    by 0x4F5C309: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (ostream:571)
+==180423==    by 0x402B17: w9::SecureData::display(std::ostream&) const (SecureData.cpp:57)
+==180423==    by 0x4031C0: w9::operator<<(std::ostream&, w9::SecureData const&) (SecureData.cpp:145)
+==180423==    by 0x402541: main (w9_prof.cpp:32)
+==180423==  Address 0x5d286d0 is 0 bytes after a block of size 1,936 alloc'd
+==180423==    at 0x4C2AB68: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==180423==    by 0x402893: w9::SecureData::SecureData(char const*, char, std::ostream*) (SecureData.cpp:34)
+==180423==    by 0x4024F8: main (w9_prof.cpp:28)
+==180423== ``k"8k*k,.%.9*'f;>9;$8.k;9$,9*&&"%,k'*%,>*,.k(9.*?./k)2kA	!*9%.k?9$>8?9>;k*8k*%k.3?.%8"$%k$-k?#.k;9$,9*&&"%,k'*%,>*,.gkA$9kk<"?#'*88.8iek#.k'*%,>*,.k#*8k.3;*%/./k8",%"-"(*%?'2kA$=.9k?"&.gk*%/k&$/.9%``k#*8k$)!.(?f$9".%?./gk,.%.9"(gkA*%/k->%(?"$%*'k-.*?>9.8k"%k*//"?"$%k?$k-*("'"?".8k-$9kA'$<f'.=.'k&.&$92k&*%";>'*?"$%ek?k"8k*'&$8?k*'<*28kA"&;'.&.%?./k*8k*k($&;"'./k'*%,>*,.gk*%/k&*%2k=.%/$98k;9$="/.k``k($&;"'.98gk"%('>/"%,k?#.k9..k$-?<*9.k$>%/*?"$%gkgkA"(9$8$-?gk%?.'gk9*('.gk*%/k	gk8$k"?k"8k*=*"'*)'.k$%kA&*%2k;'*?-$9&8eA``k<*8k/.8",%./k<"?#k*k)"*8k?$<*9/k828?.&k;9$,9*&&"%,k*%/kA.&).//./gk9.8$>9(.f($%8?9*"%./k8$-?<*9.k*%/k'*9,.k828?.&8gkA<"?#k;.9-$9&*%(.gk.--"(".%(2gk*%/k-'.3")"'"?2k$-k>8.k*8k"?8kA/.8",%k#",#'",#?8e``k#*8k*'8$k)..%k-$>%/k>8.->'k"%k&*%2kA$?#.9k($%?.3?8gk<"?#k .2k8?9.%,?#8k)."%,k8$-?<*9.kA"%-9*8?9>(?>9.k*%/k9.8$>9(.f($%8?9*"%./k*;;'"(*?"$%8gkA"%('>/"%,k/.8 ?$;k*;;'"(*?"$%8gk8.9=.98kc.e,ek.f($&&.9(.gkA.)k8.*9(#gk$9kk8.9=.98bgk*%/k;.9-$9&*%(.f(9"?"(*'kA*;;'"(*?"$%8kc.e,ek?.'.;#$%.k8<"?(#.8k$9k8;*(.k;9$).8beA``k"8k8?*%/*9/"1./k)2k?#.k%?.9%*?"$%*'k9,*%"1*?"$%k-$9kA?*%/*9/"1*?"$%kcbgk<"?#k?#.k'*?.8?k8?*%/*9/k=.98"$%kA9*?"-"./k*%/k;>)'"8#./k)2kk"%k.(.&).9ky{z|k*8kAdkzssyqy{z|kc"%-$9&*''2k %$<%k*8``z|bek#.``kA;9$,9*&&"%,k'*%,>*,.k<*8k"%"?"*''2k8?*%/*9/"1./k"%kzrrskA*8kdkzssyqzrrsgk<#"(#k<*8k?#.%k*&.%/./k)2k?#.k``{xg``zzk*%/``zk8?*%/*9/8ek#.k(>99.%?``z|kA8?*%/*9/k8>;.98./.8k?#.8.k<"?#k%.<k-.*?>9.8k*%/k*%kA.%'*9,./k8?*%/*9/k'")9*92ek	.-$9.k?#.k"%"?"*'kA8?*%/*9/"1*?"$%k"%kzrrsg``k<*8k/.=.'$;./k)2k*%"8#kA($&;>?.9k8(".%?"8?k	!*9%.k?9$>8?9>;k*?k	.''k*)8kA8"%(.kzr|rk*8k*%k.3?.%8"$%k$-k?#.k'*%,>*,.pk#.kA<*%?./k*%k.--"(".%?k*%/k-'.3")'.k'*%,>*,.k8"&"'*9k?$kA?#*?k*'8$k;9$="/./k#",#f'.=.'k-.*?>9.8k-$9k;9$,9*&kA$9,*%"1*?"$%e``y{k"8k?#.k%.3?k;'*%%./k8?*%/*9/gkA ..;"%,k<"?#k?#.k(>99.%?k?9.%/k$-k*k%.<k=.98"$%k.=.92kA?#9..k2.*98eAK
+
+
+[38;5;9m------------------------
+End Testing the Program![0m
+==180423== 
+==180423== HEAP SUMMARY:
+==180423==     in use at exit: 1,937 bytes in 1 blocks
+==180423==   total heap usage: 17 allocs, 16 frees, 104,201 bytes allocated
+==180423== 
+==180423== 1,937 bytes in 1 blocks are definitely lost in loss record 1 of 1
+==180423==    at 0x4C2AB68: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==180423==    by 0x403006: w9::SecureData::restore(char const*, char) (SecureData.cpp:115)
+==180423==    by 0x402530: main (w9_prof.cpp:31)
+==180423== 
+==180423== LEAK SUMMARY:
+==180423==    definitely lost: 1,937 bytes in 1 blocks
+==180423==    indirectly lost: 0 bytes in 0 blocks
+==180423==      possibly lost: 0 bytes in 0 blocks
+==180423==    still reachable: 0 bytes in 0 blocks
+==180423==         suppressed: 0 bytes in 0 blocks
+==180423== 
+==180423== For counts of detected and suppressed errors, rerun with: -v
+==180423== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+
+Script done on Sat 11 Apr 2020 07:44:46 PM EDT
